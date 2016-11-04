@@ -2,17 +2,19 @@ package Doors_100;
 
 import java.util.List;
 
-public class Client {
+import org.junit.Test;
+
+public class DoorTest {
 	
 	/**
 	 * 1.初始化100道门
 	 * 2.闯关次数
 	 * 3.打印门的状态
 	 */
-	public static void main(String[] args) {
+	@Test
+	public void test100Doors() {
 		List<Door> doorList = DoorHandler.initDoors(100);
 		DoorHandler.pass(doorList, 3);
 		DoorHandler.printDoorsState(doorList);
 	}
-
 }
