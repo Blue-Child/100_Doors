@@ -14,7 +14,7 @@ public class DoorHandler {
 			door.setCurState(false);	  //默认状态关闭
 			doorList.add(door);
 		}
-		return doorList;
+		return doorList;    
 	}
 	
 	//闯关次数
