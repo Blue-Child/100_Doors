@@ -17,4 +17,11 @@ public class DoorTest {
 		DoorHandler.pass(doorList, 3);
 		DoorHandler.printDoorsState(doorList);
 	}
+	
+	@Test
+	public void test100Doors2() {
+		List<Door> doorList = DoorHandler.initDoors(100);
+		DoorHandler.pass(doorList, 2);
+		DoorHandler.printDoorsState(doorList);
+	}
 }

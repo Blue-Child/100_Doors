@@ -10,8 +10,8 @@ public class DoorHandler {
 	public static List<Door> initDoors(int number) {
 		List<Door> doorList = new ArrayList<Door>();
 		for (int i = 0; i < number; i++) {
-			Door door = new Door(i + 1);  //门号从1开始
-			door.setCurState(false);	  //默认状态关闭
+			Door door = new Door(i + 1);  			  //门号从1开始
+			door.setCurState(State.STATE_CLOSE);	  //默认状态关闭
 			doorList.add(door);
 		}
 		return doorList;    
